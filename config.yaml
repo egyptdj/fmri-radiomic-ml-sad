@@ -1,0 +1,33 @@
+
+# paths
+data_dir: 'data'
+crf_path: 'data/crf_full.csv'
+result_dir: 'result'
+
+# features
+features: [
+  'reho',
+  'falff',
+  'frsfa',
+  'dc',
+]
+atlases: [
+  'aal',
+]
+regions: [
+  'Frontal_Inf_Orb',
+  'Cingulum_Ant',
+  'Cingulum_Post',
+  'Precuneus',
+  'Amygdala',
+  'Hippocampus',
+  'ParaHippocampal',
+]
+# hyperparameters
+seed: 0
+qcuts: [
+  'low',
+  'high',
+]
+scoring: 'f1_macro'
+num_folds: 5
